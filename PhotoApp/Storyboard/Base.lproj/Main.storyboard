@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EMa-7v-BKX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CameraVC" id="BYZ-38-t0r" customClass="CameraVC" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera" id="Wt5-nw-Nrt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ge7-Rx-F7t">
+                            <connections>
+                                <action selector="cameraBtnPressed:" destination="BYZ-38-t0r" id="t7D-Ui-WXp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Preview-->
+        <scene sceneID="Us1-yp-mwN">
+            <objects>
+                <viewController storyboardIdentifier="PreviewVC" id="glU-KL-CT5" customClass="PreviewVC" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwA-Qa-weN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-7R-WRW">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5V-K7-bHq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-ja-P4e">
+                                        <rect key="frame" x="177" y="39.5" width="60.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thh-z1-jIU">
+                                        <rect key="frame" x="352" y="30" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="345-KU-zra"/>
+                                            <constraint firstAttribute="width" secondItem="thh-z1-jIU" secondAttribute="height" multiplier="1:1" id="Y8r-nK-Vd4"/>
+                                        </constraints>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveToPhotoLibrary:" destination="glU-KL-CT5" eventType="touchUpInside" id="ZAy-MZ-jXl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-3a-8dv">
+                                        <rect key="frame" x="20" y="30" width="45" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yFz-oZ-4iU"/>
+                                        </constraints>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteBtnPressed:" destination="glU-KL-CT5" eventType="touchUpInside" id="ZGt-Qj-qs0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="thh-z1-jIU" firstAttribute="centerY" secondItem="j5V-K7-bHq" secondAttribute="centerY" id="4fP-ex-Mi1"/>
+                                    <constraint firstItem="TBb-ja-P4e" firstAttribute="centerY" secondItem="j5V-K7-bHq" secondAttribute="centerY" id="DRU-2R-Rc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="thh-z1-jIU" secondAttribute="trailing" constant="22" id="EGk-mf-0fD"/>
+                                    <constraint firstItem="SyA-3a-8dv" firstAttribute="centerY" secondItem="j5V-K7-bHq" secondAttribute="centerY" id="JWd-Qj-kPl"/>
+                                    <constraint firstItem="SyA-3a-8dv" firstAttribute="leading" secondItem="j5V-K7-bHq" secondAttribute="leading" constant="20" id="XNn-xo-QHm"/>
+                                    <constraint firstAttribute="height" constant="100" id="p2d-Px-AQm"/>
+                                    <constraint firstItem="TBb-ja-P4e" firstAttribute="centerX" secondItem="j5V-K7-bHq" secondAttribute="centerX" id="srI-5a-dD7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PJX-7R-WRW" firstAttribute="leading" secondItem="Vkv-92-U3i" secondAttribute="leading" id="3lR-vm-RgK"/>
+                            <constraint firstItem="j5V-K7-bHq" firstAttribute="leading" secondItem="Vkv-92-U3i" secondAttribute="leading" id="AjY-S8-1OI"/>
+                            <constraint firstItem="j5V-K7-bHq" firstAttribute="top" secondItem="Vkv-92-U3i" secondAttribute="top" id="Kfo-Zl-x6h"/>
+                            <constraint firstItem="j5V-K7-bHq" firstAttribute="trailing" secondItem="Vkv-92-U3i" secondAttribute="trailing" id="e7C-4x-PkW"/>
+                            <constraint firstItem="Vkv-92-U3i" firstAttribute="bottom" secondItem="PJX-7R-WRW" secondAttribute="bottom" id="hp0-Zv-wA0"/>
+                            <constraint firstItem="Vkv-92-U3i" firstAttribute="trailing" secondItem="PJX-7R-WRW" secondAttribute="trailing" id="jTu-jq-n8Q"/>
+                            <constraint firstItem="PJX-7R-WRW" firstAttribute="top" secondItem="j5V-K7-bHq" secondAttribute="bottom" id="spR-9M-4sd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vkv-92-U3i"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Preview" id="m70-Rj-WYE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="F78-b3-q0e">
+                            <connections>
+                                <action selector="saveToPhotoLibrary:" destination="glU-KL-CT5" id="a9d-Ko-OGm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="capturedImageView" destination="PJX-7R-WRW" id="w7N-2A-Zon"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2Y-rC-6Hs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="byY-Tn-YZy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EMa-7v-BKX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MCQ-op-OsS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZSC-WQ-Y33"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wlm-1W-qhw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

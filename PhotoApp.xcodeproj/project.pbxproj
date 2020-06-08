@@ -7,23 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9434A039248CD70400D891A8 /* NavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434A038248CD70400D891A8 /* NavigationControllerExt.swift */; };
+		9434A040248D072300D891A8 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434A03F248D072200D891A8 /* NotificationPublisher.swift */; };
 		94FD6887248B328900B01E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD6886248B328900B01E02 /* AppDelegate.swift */; };
 		94FD6889248B328900B01E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD6888248B328900B01E02 /* SceneDelegate.swift */; };
-		94FD688B248B328900B01E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD688A248B328900B01E02 /* ViewController.swift */; };
+		94FD688B248B328900B01E02 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD688A248B328900B01E02 /* CameraVC.swift */; };
 		94FD688E248B328900B01E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD688C248B328900B01E02 /* Main.storyboard */; };
 		94FD6890248B328E00B01E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FD688F248B328E00B01E02 /* Assets.xcassets */; };
 		94FD6893248B328E00B01E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD6891248B328E00B01E02 /* LaunchScreen.storyboard */; };
+		94FD689B248B345400B01E02 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD689A248B345400B01E02 /* PreviewVC.swift */; };
+		94FD68A4248BFF8200B01E02 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD68A3248BFF8200B01E02 /* ShareViewController.swift */; };
+		94FD68A7248BFF8200B01E02 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD68A5248BFF8200B01E02 /* MainInterface.storyboard */; };
+		94FD68AB248BFF8200B01E02 /* SharePic.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94FD68A1248BFF8200B01E02 /* SharePic.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		94FD68A9248BFF8200B01E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94FD687B248B328900B01E02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94FD68A0248BFF8200B01E02;
+			remoteInfo = SharePic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94FD68AF248BFF8200B01E02 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94FD68AB248BFF8200B01E02 /* SharePic.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9434A038248CD70400D891A8 /* NavigationControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExt.swift; sourceTree = "<group>"; };
+		9434A03F248D072200D891A8 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 		94FD6883248B328900B01E02 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FD6886248B328900B01E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FD6888248B328900B01E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94FD688A248B328900B01E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94FD688A248B328900B01E02 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		94FD688D248B328900B01E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FD688F248B328E00B01E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FD6892248B328E00B01E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FD6894248B328E00B01E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD689A248B345400B01E02 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
+		94FD689C248BCC1D00B01E02 /* PhotoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoApp.entitlements; sourceTree = "<group>"; };
+		94FD68A1248BFF8200B01E02 /* SharePic.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharePic.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FD68A3248BFF8200B01E02 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		94FD68A6248BFF8200B01E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		94FD68A8248BFF8200B01E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD68B0248BFF9200B01E02 /* SharePic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharePic.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +73,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94FD689E248BFF8200B01E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9434A037248CD6CD00D891A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9434A038248CD70400D891A8 /* NavigationControllerExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9434A03A248CE0EF00D891A8 /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				94FD689C248BCC1D00B01E02 /* PhotoApp.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		9434A03B248CE10800D891A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94FD688A248B328900B01E02 /* CameraVC.swift */,
+				94FD689A248B345400B01E02 /* PreviewVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9434A03C248CE11D00D891A8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				94FD688C248B328900B01E02 /* Main.storyboard */,
+				94FD6891248B328E00B01E02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9434A03D248CEB7100D891A8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				94FD6886248B328900B01E02 /* AppDelegate.swift */,
+				94FD6888248B328900B01E02 /* SceneDelegate.swift */,
+				94FD688F248B328E00B01E02 /* Assets.xcassets */,
+				9434A03F248D072200D891A8 /* NotificationPublisher.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9434A03E248CEB8800D891A8 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				94FD6894248B328E00B01E02 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		94FD687A248B328900B01E02 = {
 			isa = PBXGroup;
 			children = (
 				94FD6885248B328900B01E02 /* PhotoApp */,
+				94FD68A2248BFF8200B01E02 /* SharePic */,
 				94FD6884248B328900B01E02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				94FD6883248B328900B01E02 /* PhotoApp.app */,
+				94FD68A1248BFF8200B01E02 /* SharePic.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +157,25 @@
 		94FD6885248B328900B01E02 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
-				94FD6886248B328900B01E02 /* AppDelegate.swift */,
-				94FD6888248B328900B01E02 /* SceneDelegate.swift */,
-				94FD688A248B328900B01E02 /* ViewController.swift */,
-				94FD688C248B328900B01E02 /* Main.storyboard */,
-				94FD688F248B328E00B01E02 /* Assets.xcassets */,
-				94FD6891248B328E00B01E02 /* LaunchScreen.storyboard */,
-				94FD6894248B328E00B01E02 /* Info.plist */,
+				9434A03E248CEB8800D891A8 /* Plist */,
+				9434A03D248CEB7100D891A8 /* Others */,
+				9434A03C248CE11D00D891A8 /* Storyboard */,
+				9434A03B248CE10800D891A8 /* Controllers */,
+				9434A03A248CE0EF00D891A8 /* Entitlements */,
+				9434A037248CD6CD00D891A8 /* Extension */,
 			);
 			path = PhotoApp;
+			sourceTree = "<group>";
+		};
+		94FD68A2248BFF8200B01E02 /* SharePic */ = {
+			isa = PBXGroup;
+			children = (
+				94FD68B0248BFF9200B01E02 /* SharePic.entitlements */,
+				94FD68A3248BFF8200B01E02 /* ShareViewController.swift */,
+				94FD68A5248BFF8200B01E02 /* MainInterface.storyboard */,
+				94FD68A8248BFF8200B01E02 /* Info.plist */,
+			);
+			path = SharePic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +188,34 @@
 				94FD687F248B328900B01E02 /* Sources */,
 				94FD6880248B328900B01E02 /* Frameworks */,
 				94FD6881248B328900B01E02 /* Resources */,
+				94FD68AF248BFF8200B01E02 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94FD68AA248BFF8200B01E02 /* PBXTargetDependency */,
 			);
 			name = PhotoApp;
 			productName = PhotoApp;
 			productReference = 94FD6883248B328900B01E02 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		94FD68A0248BFF8200B01E02 /* SharePic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FD68AC248BFF8200B01E02 /* Build configuration list for PBXNativeTarget "SharePic" */;
+			buildPhases = (
+				94FD689D248BFF8200B01E02 /* Sources */,
+				94FD689E248BFF8200B01E02 /* Frameworks */,
+				94FD689F248BFF8200B01E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharePic;
+			productName = SharePic;
+			productReference = 94FD68A1248BFF8200B01E02 /* SharePic.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +228,9 @@
 				ORGANIZATIONNAME = Outect;
 				TargetAttributes = {
 					94FD6882248B328900B01E02 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					94FD68A0248BFF8200B01E02 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -116,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				94FD6882248B328900B01E02 /* PhotoApp */,
+				94FD68A0248BFF8200B01E02 /* SharePic */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +265,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94FD689F248BFF8200B01E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FD68A7248BFF8200B01E02 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +280,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FD688B248B328900B01E02 /* ViewController.swift in Sources */,
+				94FD688B248B328900B01E02 /* CameraVC.swift in Sources */,
+				94FD689B248B345400B01E02 /* PreviewVC.swift in Sources */,
 				94FD6887248B328900B01E02 /* AppDelegate.swift in Sources */,
+				9434A040248D072300D891A8 /* NotificationPublisher.swift in Sources */,
 				94FD6889248B328900B01E02 /* SceneDelegate.swift in Sources */,
+				9434A039248CD70400D891A8 /* NavigationControllerExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FD689D248BFF8200B01E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FD68A4248BFF8200B01E02 /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94FD68AA248BFF8200B01E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94FD68A0248BFF8200B01E02 /* SharePic */;
+			targetProxy = 94FD68A9248BFF8200B01E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		94FD688C248B328900B01E02 /* Main.storyboard */ = {
@@ -161,6 +322,14 @@
 				94FD6892248B328E00B01E02 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94FD68A5248BFF8200B01E02 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94FD68A6248BFF8200B01E02 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,15 +452,18 @@
 		94FD6898248B328E00B01E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements/PhotoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3ZN9GP27L;
-				INFOPLIST_FILE = PhotoApp/Info.plist;
+				INFOPLIST_FILE = PhotoApp/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.outect.PhotoApp.PhotoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outect.photoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,16 +473,61 @@
 		94FD6899248B328E00B01E02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements/PhotoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3ZN9GP27L;
-				INFOPLIST_FILE = PhotoApp/Info.plist;
+				INFOPLIST_FILE = PhotoApp/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.outect.PhotoApp.PhotoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outect.photoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94FD68AD248BFF8200B01E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharePic/SharePic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3ZN9GP27L;
+				INFOPLIST_FILE = SharePic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outect.photoApp.SharePic;
+				PRODUCT_NAME = SharePic;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94FD68AE248BFF8200B01E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharePic/SharePic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3ZN9GP27L;
+				INFOPLIST_FILE = SharePic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outect.photoApp.SharePic;
+				PRODUCT_NAME = SharePic;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +550,15 @@
 			buildConfigurations = (
 				94FD6898248B328E00B01E02 /* Debug */,
 				94FD6899248B328E00B01E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FD68AC248BFF8200B01E02 /* Build configuration list for PBXNativeTarget "SharePic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FD68AD248BFF8200B01E02 /* Debug */,
+				94FD68AE248BFF8200B01E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
